@@ -1,0 +1,15 @@
+const mongoose = require("mongoose");
+require("dotenv").config();
+
+module.exports = () => {
+  mongoose.connect(process.env.DB_URI, {});
+
+  const db = mongoose.connection;
+
+  db.on("error", console.error.bind(console, "MongoDB connection error:"));
+  db.once("open", () => {
+    console.log("MongoDB connected.");
+  });
+
+  return db;
+};
