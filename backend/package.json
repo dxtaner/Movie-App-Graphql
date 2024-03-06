@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-server-express": "3.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-graphql": "0.6.12",
+    "graphql": "^15.3.0",
+    "graphql-tools": "^9.0.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.2.0",
+    "node-cron": "^3.0.3"
+  },
+  "keywords": [
+    "movie-app",
+    "graphql"
+  ],
+  "author": "dxtaner",
+  "license": "ISC"
+}
